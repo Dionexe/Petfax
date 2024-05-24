@@ -12,8 +12,12 @@
         <H1>UserFax</H1>
         {% for fact in facts %}
             <H4>Submitted by {{ fact.submitter }}</H4>
+        <div>
+            <a href="/pets">⟨　Go back</a>
+        </div>
             {{ fact.fact }}
         {% endfor %}
+        
     </div>
 </body>
 </html>
